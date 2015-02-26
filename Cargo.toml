@@ -11,9 +11,14 @@ description = """
 unicode as a stand-alone crate
 """
 
+build = "build.rs"
+
 [lib]
 name = "unicode"
 path = "rust/src/libunicode/lib.rs"
 
+[build-dependencies.rust_src]
+git = "https://github.com/sondrele/rust-src.git"
+
 [target.thumbv7m-none-eabi.dependencies.core]
-git = "https://github.com/sondrele/rust-libcore.git"
+git = "https://github.com/RustyGecko/rust-core.git"
