@@ -1,6 +1,5 @@
 [package]
-
-name = "unicode"
+name = "rustc_unicode"
 version = "0.0.1"
 authors = ["The Rust Project Developers"]
 
@@ -14,8 +13,8 @@ unicode as a stand-alone crate
 build = "build.rs"
 
 [lib]
-name = "unicode"
-path = "rust/src/libunicode/lib.rs"
+name = "rustc_unicode"
+path = "rust/src/librustc_unicode/lib.rs"
 
 [build-dependencies.rust_src]
 git = "https://github.com/sondrele/rust-src.git"
